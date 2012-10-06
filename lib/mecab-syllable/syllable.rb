@@ -31,12 +31,12 @@ module MeCab
       nodes.each do |node|
         part = node.part
         next if part.empty?
-          kana = node.kana
-          if kana
-            syllables << select_syllable(kana)
-          else
-            syllables << select_syllable(part)
-          end
+        ana = node.kana
+        if kana
+          syllables << select_syllable(kana)
+        else
+          syllables << select_syllable(part)
+        end
       end
       syllables
     end
