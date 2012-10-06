@@ -1,0 +1,1 @@
+require 'mecab-syllable/syllable'
