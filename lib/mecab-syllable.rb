@@ -1,7 +1,7 @@
 require "mecab-syllable/version"
 
 module MeCab
-  module Syllable
+  class Syllable
     # Your code goes here...
   end
 end
