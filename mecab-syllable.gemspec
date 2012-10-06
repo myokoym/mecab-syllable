@@ -20,4 +20,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 1.9.1'
 
   gem.add_runtime_dependency 'mecab-modern', ['>= 0.0.2']
+
+  gem.add_development_dependency 'rake',  ['~> 0.9.2']
+  gem.add_development_dependency 'rspec', ['~> 2.11.0']
 end
