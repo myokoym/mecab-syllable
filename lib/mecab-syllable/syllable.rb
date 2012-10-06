@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 require 'MeCab'
+require 'mecab-modern'
 
 module MeCab
   class Node
@@ -25,19 +26,17 @@ module MeCab
     private
     def split(text)
       mecab = MeCab::Tagger.new
-      node = mecab.parseToNode(text)
+      nodes = mecab.parseToNode(text)
       syllables = []
-      while node
+      nodes.each do |node|
         part = node.part
-        unless part.empty?
+        next if part.empty?
           kana = node.kana
           if kana
             syllables << select_syllable(kana)
           else
             syllables << select_syllable(part)
           end
-        end
-        node = node.next
       end
       syllables
     end
