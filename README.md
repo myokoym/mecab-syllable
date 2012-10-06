@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'MeCab'
+    require 'mecab-syllable'
+
+    p MeCab::Syllable.new("今日は雨").count  #=> 5
 
 ## Contributing
 
