@@ -1,6 +1,8 @@
 # Mecab::Syllable
 
-TODO: Write a gem description
+日本語の文章を音節で分割して扱うことができます。
+
+使用例: 俳句や短歌の推敲として、音数を数える
 
 ## Installation
 
