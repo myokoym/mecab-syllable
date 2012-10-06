@@ -31,7 +31,7 @@ module MeCab
       nodes.each do |node|
         part = node.part
         next if part.empty?
-        ana = node.kana
+        kana = node.kana
         if kana
           syllables << select_syllable(kana)
         else
