@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = MeCab::Syllable::VERSION
   gem.authors       = ["Masafumi Yokoyama"]
   gem.email         = ["myokoym@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Function addition for mecab-ruby. Supporting syllable parse.}
+  gem.summary       = %q{Syllable parser for mecab-ruby}
+  gem.homepage      = "https://github.com/myokoym/mecab-syllable"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
