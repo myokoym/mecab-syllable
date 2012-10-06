@@ -1,6 +1,6 @@
 require "mecab-syllable/version"
 
-module Mecab
+module MeCab
   module Syllable
     # Your code goes here...
   end

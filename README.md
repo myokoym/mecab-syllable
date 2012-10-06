@@ -1,4 +1,4 @@
-# Mecab::Syllable
+# MeCab::Syllable
 
 日本語の文章を音節で分割して扱うことができます。
 

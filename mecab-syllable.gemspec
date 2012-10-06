@@ -5,7 +5,7 @@ require 'mecab-syllable/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "mecab-syllable"
-  gem.version       = Mecab::Syllable::VERSION
+  gem.version       = MeCab::Syllable::VERSION
   gem.authors       = ["Masafumi Yokoyama"]
   gem.email         = ["myokoym@gmail.com"]
   gem.description   = %q{TODO: Write a gem description}
