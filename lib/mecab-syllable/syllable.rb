@@ -6,11 +6,11 @@ require 'mecab-modern'
 module MeCab
   class Node
     def part
-      surface.force_encoding("UTF-8")
+      surface
     end
 
     def kana
-      feature.force_encoding("UTF-8").split(/,/)[8]
+      feature.split(/,/)[8]
     end
   end
 
