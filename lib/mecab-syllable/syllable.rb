@@ -42,7 +42,7 @@ module MeCab
     end
 
     def select_syllable(kana)
-      hiragana_to_katakana(kana).gsub(/[^ァ-モヤユヨ-ヴー]/, "").split(//)
+      hiragana_to_katakana(kana).gsub(/[^アイウエオカ-モヤユヨラ-ロワヲンヴー]/, "").split(//)
     end
   
     def hiragana_to_katakana(hiragana)
