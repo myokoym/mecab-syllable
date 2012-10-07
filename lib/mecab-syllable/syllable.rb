@@ -5,10 +5,6 @@ require 'mecab-modern'
 
 module MeCab
   class Node
-    def part
-      surface
-    end
-
     def kana
       feature.split(/,/)[8]
     end
@@ -28,13 +24,13 @@ module MeCab
       nodes = MeCab::Tagger.new.parseToNode(text)
       syllables = []
       nodes.each do |node|
-        part = node.part
-        next if part.empty?
+        surface = node.surface
+        next if surface.empty?
         kana = node.kana
         if kana
           syllables << select_syllable(kana)
         else
-          syllables << select_syllable(part)
+          syllables << select_syllable(surface)
         end
       end
       syllables
