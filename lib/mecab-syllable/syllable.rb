@@ -25,8 +25,7 @@ module MeCab
 
     private
     def split(text)
-      mecab = MeCab::Tagger.new
-      nodes = mecab.parseToNode(text)
+      nodes = MeCab::Tagger.new.parseToNode(text)
       syllables = []
       nodes.each do |node|
         part = node.part
