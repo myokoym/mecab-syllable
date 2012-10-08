@@ -12,6 +12,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Syllable parser for mecab-ruby}
   gem.homepage      = "https://github.com/myokoym/mecab-syllable"
 
+  gem.post_install_message = '### WARNING: This gem is RENAME to mecab-mora. ###'
+
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
