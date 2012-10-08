@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = MeCab::Syllable::VERSION
   gem.authors       = ["Masafumi Yokoyama"]
   gem.email         = ["myokoym@gmail.com"]
-  gem.description   = %q{Function addition for mecab-ruby. Supporting syllable parse.}
-  gem.summary       = %q{Syllable parser for mecab-ruby}
+  gem.description   = %q{WARNING: This gem is RENAME to mecab-mora.}
+  gem.summary       = %q{WARNING: This gem is RENAME to mecab-mora.}
   gem.homepage      = "https://github.com/myokoym/mecab-syllable"
 
   gem.post_install_message = '### WARNING: This gem is RENAME to mecab-mora. ###'
